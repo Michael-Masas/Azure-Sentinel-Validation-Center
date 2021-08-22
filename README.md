@@ -17,9 +17,12 @@ Variables :
 on main (FirstFunction): 
 
 To Use the Function -> Deploy The Function App to Azure and use the name of the Use case in get_file_by_name Function \
-azure_log_customer_id = -> Goes to Veriable -> la_workspace_id = os.environ["WorkspaceID"] \
-azure_log_shared_key = -> Goes to Veriable -> la_workspace_key = os.environ["WorkspaceKey"] \
-table_name = 'DummyData' -- > Azure LA Custom Table Name \
+azure_log_customer_id = -> Goes to Veriable -> la_workspace_id = os.environ["WorkspaceID"] -- from Function App Application Settings \
+azure_log_shared_key = -> Goes to Veriable -> la_workspace_key = os.environ["WorkspaceKey"] -- from Function App Application Settings \
+table_name = 'os.environ["LogAnalyticsTable"] -- > Azure LA Custom Table Name - From Function App Application Settings
+
+
+
 
 
 
