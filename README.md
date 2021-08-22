@@ -8,17 +8,17 @@ Folder Structure
 Direcotory : FirstFunction :
 __init__.py -- main file for Function App \
 function.json -- configuration for function app \
-conditional.py -- file for Conditional Access Use Case Data \
+usecase.py -- file for Conditional Access Use Case Data - Classes File
 defualt.py -- file if no use case file was configured on Parameter in Function APP \
 
 
 # Use and Test
 Variables :
-on main function : 
+on main (FirstFunction): 
 
-parameter_from_azure = os.environ["UseCase"] \ 
-azure_log_customer_id = 'INSERT AZURE LA WORKSPACE ID' \ 
-azure_log_shared_key =  'INSERT AZURE LA WORKSPACE KEY' \ 
+To Use the Function -> Deploy The Function App to Azure and use the name of the Use case in get_file_by_name Function \
+azure_log_customer_id = -> Goes to Veriable -> la_workspace_id = os.environ["WorkspaceID"] \
+azure_log_shared_key = -> Goes to Veriable -> la_workspace_key = os.environ["WorkspaceKey"] \
 table_name = 'DummyData' -- > Azure LA Custom Table Name \
 
 
